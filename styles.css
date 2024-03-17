@@ -33,8 +33,30 @@ section {
     padding: 20px;
     margin-top: 20px;
 }
-
 .flow-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 0 0 calc(33.333% - 20px); /* 横幅を33.333%に設定し、マージンを引いて重なりがないようにする */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* 要素の幅にパディングとボーダーを含めるため */
+    padding: 10px; /* 要素の内側に余白を設定 */
+    text-align: center; /* テキストを中央に配置 */
+}
+
+.step h3 {
+    margin-top: 0; /* ヘッダーの上部マージンを0に設定 */
+}
+
+.step img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* .flow-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -55,4 +77,4 @@ section {
         flex-basis: 45%;
     }
 }
-
+ */
